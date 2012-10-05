@@ -5,14 +5,14 @@
         <artifactId>cas-overlay-demo</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>cas-overlay-services-demo</artifactId>
+    <artifactId>cas-overlay-management-demo</artifactId>
     <packaging>war</packaging>
-    <name>CAS Overlay services demo</name>
-    <description>CAS Overlay services demo</description>
+    <name>CAS Overlay management demo</name>
+    <description>CAS Overlay management demo</description>
     <dependencies>
         <dependency>
             <groupId>org.jasig.cas</groupId>
-            <artifactId>cas-services-webapp</artifactId>
+            <artifactId>cas-management-webapp</artifactId>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>

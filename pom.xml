@@ -17,7 +17,7 @@
             </dependency>
             <dependency>
                 <groupId>org.jasig.cas</groupId>
-                <artifactId>cas-services-webapp</artifactId>
+                <artifactId>cas-management-webapp</artifactId>
                 <version>${cas.version}</version>
                 <type>war</type>
                 <scope>runtime</scope>
@@ -49,7 +49,7 @@
     </build>
     <modules>
         <module>cas-overlay-server-demo</module>
-        <module>cas-overlay-services-demo</module>
+        <module>cas-overlay-management-demo</module>
     </modules>
     <properties>
         <cas.version>4.0.0-SNAPSHOT</cas.version>

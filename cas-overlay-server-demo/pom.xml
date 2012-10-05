@@ -38,8 +38,8 @@
                     </webApp>
                     <contextHandlers>
                         <contextHandler implementation="org.eclipse.jetty.webapp.WebAppContext">
-                            <war>${basedir}/../cas-overlay-services-demo/target/cas-overlay-services-demo.war</war>
-                            <contextPath>/services</contextPath>
+                            <war>${basedir}/../cas-overlay-management-demo/target/cas-overlay-management-demo.war</war>
+                            <contextPath>/management</contextPath>
                         </contextHandler>
                     </contextHandlers>
                 </configuration>
