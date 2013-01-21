@@ -54,5 +54,15 @@
     <properties>
         <cas.version>4.0.0-SNAPSHOT</cas.version>
     </properties>
+    <repositories>
+    	<repository>
+			<id>ja-sig</id>
+			<url>http://oss.sonatype.org/content/repositories/releases/ </url>
+		</repository>
+		<repository>
+			<id>ja-sig-snapshot</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
 </project>
 
