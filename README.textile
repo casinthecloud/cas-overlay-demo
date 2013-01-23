@@ -12,7 +12,7 @@ mvn jetty:run</code></pre>
 
 To test,
 - call the "http://localhost:8080/management":http://localhost:8080/management url to access the CAS services management webapp
-- be redirected to CAS server and authenticate (same password as login, url : _http://localhost:8080/cas_)
+- be redirected to CAS server and authenticate (username: jleleu, password: jleleu)
 - be redirected back to the CAS services management webapp, being successfully authenticated.
 
 h2. Manual deployment
