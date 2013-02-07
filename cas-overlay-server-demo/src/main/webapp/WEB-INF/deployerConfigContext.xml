@@ -117,7 +117,7 @@
 					| a server side SSL certificate.
 					+-->
 				<bean class="org.jasig.cas.authentication.handler.support.HttpBasedServiceCredentialsAuthenticationHandler"
-					p:httpClient-ref="httpClient" />
+					p:httpClient-ref="httpClient" p:requireSecure="false" />
 				<!--
 					| This is the authentication handler declaration that every CAS deployer will need to change before deploying CAS 
 					| into production.  The default SimpleTestUsernamePasswordAuthenticationHandler authenticates UsernamePasswordCredentials
