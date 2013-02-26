@@ -50,15 +50,9 @@
       <list>
         <value>${cas.viewResolver.basename}</value>
         <value>protocol_views</value>
-        <value>saml_views</value>
       </list>
     </property>
   </bean>
-
-  <bean id="xmlViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver" 
-  		p:order="1" 
-  		p:location="/WEB-INF/view/views.xml" 
-  />
   
   <!-- Locale Resolver -->
   <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" p:defaultLocale="en" />
@@ -69,9 +63,9 @@
         p:viewClass="org.springframework.web.servlet.view.InternalResourceView"
         p:prefix="/WEB-INF/view/jsp/"
         p:suffix=".jsp"
-        p:order="2"/>
+        p:order="1"/>
   
-  <bean id="errorHandlerResolver" class="org.jasig.cas.web.NoSuchFlowExecutionExceptionResolver"/>
+  <bean id="errorHandlerResolver" class="org.jasig.cas.web.FlowExecutionExceptionResolver"/>
 
   <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
@@ -86,7 +80,6 @@
         <prop key="/proxy">proxyController</prop>
         <prop key="/proxyValidate">proxyValidateController</prop>
         <prop key="/samlValidate">samlValidateController</prop>
-        <prop key="/openid/*">openIdProviderController</prop>
         <prop key="/authorizationFailure.html">passThroughController</prop>
         <prop key="/status">healthCheckController</prop>
         <prop key="/statistics">statisticsController</prop>
@@ -106,11 +99,6 @@
   </bean>
 
   <bean id="passThroughController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
-
-  <bean
-      id="openIdProviderController"
-      class="org.jasig.cas.web.OpenIdProviderController"
-      p:loginUrl="${cas.loginUrl}"/>
 
   <bean
       id="serviceLogoutViewController"
@@ -170,14 +158,6 @@
         p:proxyHandler-ref="proxy20Handler"
         p:argumentExtractor-ref="casArgumentExtractor"/>
 
-  <bean id="samlValidateController" class="org.jasig.cas.web.ServiceValidateController"
-        p:validationSpecificationClass="org.jasig.cas.validation.Cas20WithoutProxyingValidationSpecification"
-        p:centralAuthenticationService-ref="centralAuthenticationService"
-        p:proxyHandler-ref="proxy20Handler"
-        p:argumentExtractor-ref="samlArgumentExtractor"
-        p:successView="casSamlServiceSuccessView"
-        p:failureView="casSamlServiceFailureView"/>
-
   <bean id="legacyValidateController" class="org.jasig.cas.web.ServiceValidateController"
         p:proxyHandler-ref="proxy10Handler"
         p:successView="cas1ServiceSuccessView"
@@ -188,6 +168,14 @@
 
   <bean id="proxyController" class="org.jasig.cas.web.ProxyController"
         p:centralAuthenticationService-ref="centralAuthenticationService"/>
+
+  <bean id="samlValidateController" class="org.jasig.cas.web.ServiceValidateController"
+        p:validationSpecificationClass="org.jasig.cas.validation.Cas20WithoutProxyingValidationSpecification"
+        p:centralAuthenticationService-ref="centralAuthenticationService"
+        p:proxyHandler-ref="proxy20Handler"
+        p:argumentExtractor-ref="samlArgumentExtractor"
+        p:successView="casSamlServiceSuccessView"
+        p:failureView="casSamlServiceFailureView"/>
 
   <bean id="statisticsController" class="org.jasig.cas.web.StatisticsController"
         p:casTicketSuffix="${host.name}">
