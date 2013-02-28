@@ -80,6 +80,7 @@
         <prop key="/proxy">proxyController</prop>
         <prop key="/proxyValidate">proxyValidateController</prop>
         <prop key="/samlValidate">samlValidateController</prop>
+        <prop key="/openid/*">openIdProviderController</prop>
         <prop key="/authorizationFailure.html">passThroughController</prop>
         <prop key="/status">healthCheckController</prop>
         <prop key="/statistics">statisticsController</prop>
@@ -112,6 +113,10 @@
     </property>
   </bean>
 
+  <bean
+      id="openIdProviderController"
+      class="org.jasig.cas.support.openid.web.OpenIdProviderController"
+      p:loginUrl="${server.prefix}/login"/>
 
   <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter"
         p:flowExecutor-ref="flowExecutor"

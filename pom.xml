@@ -48,6 +48,11 @@
                 <artifactId>cas-server-support-saml</artifactId>
                 <version>${cas.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.jasig.cas</groupId>
+                <artifactId>cas-server-support-openid</artifactId>
+                <version>${cas.version}</version>
+            </dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
