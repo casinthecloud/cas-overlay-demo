@@ -28,6 +28,11 @@
             <groupId>org.jasig.cas</groupId>
             <artifactId>cas-server-support-openid</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.jasig.cas</groupId>
+            <artifactId>cas-server-core</artifactId>
+            <type>test-jar</type>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
