@@ -11,7 +11,7 @@ mvn clean install</code></pre>and start the two web applications with jetty :<pr
 mvn jetty:run</code></pre>
 
 To test,
-- call the "http://localhost:8080/management":http://localhost:8080/management url to access the CAS services management webapp
+- call the "http://localhost:8080/cas-management":http://localhost:8080/cas-management url to access the CAS services management webapp
 - be redirected to CAS server and authenticate (username: jleleu, password: jleleu)
 - be redirected back to the CAS services management webapp, being successfully authenticated.
 
@@ -19,4 +19,4 @@ h2. Manual deployment
 
 You can also deploy manually these two web applications in your favorite web applications server :
 - cas-overlay-server-demo on http://localhost:8080/cas
-- cas-overlay-management-demo on http://localhost:8080/management or whatever the context you want as it doesn't matter in this case.
+- cas-overlay-management-demo on http://localhost:8080/cas-management or whatever the context you want as it doesn't matter in this case.
