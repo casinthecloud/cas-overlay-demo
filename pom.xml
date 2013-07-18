@@ -89,7 +89,7 @@
 		<module>cas-overlay-management-demo</module>
 	</modules>
 	<properties>
-		<cas.version>4.0.0-SNAPSHOT</cas.version>
+		<cas.version>4.0.0-RC2-SNAPSHOT</cas.version>
 	</properties>
 </project>
 
