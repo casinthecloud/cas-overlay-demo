@@ -156,6 +156,9 @@
             <property name="description" value="Allows only back services" />
             <property name="serviceId" value="^https?://back.*" />
             <property name="evaluationOrder" value="10000002" />
+            <property name="attributeReleasePolicy">
+              <bean class="org.jasig.cas.services.ReturnAllAttributeReleasePolicy" />
+            </property>
         </bean>
         <bean class="org.jasig.cas.services.RegexRegisteredService">
             <property name="id" value="2" />
