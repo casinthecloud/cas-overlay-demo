@@ -31,12 +31,22 @@
         <dependency>
             <groupId>org.jasig.cas</groupId>
             <artifactId>cas-server-support-openid</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpcore</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.jasig.cas</groupId>
             <artifactId>cas-server-core</artifactId>
             <type>test-jar</type>
-        </dependency>
+        </dependency>       
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
