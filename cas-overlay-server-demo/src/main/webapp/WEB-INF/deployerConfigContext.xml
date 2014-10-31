@@ -148,7 +148,6 @@
             <property name="serviceId" value="^https?://front.*" />
             <property name="evaluationOrder" value="10000001" />
             <property name="logoutType" value="FRONT_CHANNEL" />
-            <property name="anonymousAccess" value="true" />
         </bean>
         <bean class="org.jasig.cas.services.RegexRegisteredService">
             <property name="id" value="1" />
