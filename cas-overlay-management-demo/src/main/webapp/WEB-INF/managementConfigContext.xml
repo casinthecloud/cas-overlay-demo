@@ -52,6 +52,7 @@
 
     <sec:user-service id="userDetailsService">
         <sec:user name="jleleu" password="notused" authorities="ROLE_ADMIN" />
+        <sec:user name="leleuj" password="notused" authorities="ROLE_ADMIN" />
     </sec:user-service>
 	
     <!-- 

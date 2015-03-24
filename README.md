@@ -8,20 +8,25 @@ It's composed of two overlays:
 
 ## Deploy
 
-Deploy manually these two web applications in your favorite web applications server:
+To start quickly, build the project:
 
-- cas-overlay-server-demo on /cas
-- cas-overlay-management-demo on /cas-management.
+    cd cas-overlay-demo
+    mvn clean install
 
-For example, with Tomcat (in your *server.xml* file):
+and start the two web applications with jetty:
 
-    <Context docBase="/usr/local/myapps/cas-overlay-demo/cas-overlay-server-demo/target/cas-overlay-server-demo" path="/cas" />
-    <Context docBase="/usr/local/myapps/cas-overlay-demo/cas-overlay-management-demo/target/cas-overlay-management-demo" path="/cas-management" />
-
-## Test
+    cd cas-overlay-server-demo
+    mvn jetty:run</code>
 
 To test,
 
 - call the [http://localhost:8080/cas-management](http://localhost:8080/cas-management) url to access the CAS services management webapp
 - be redirected to CAS server and authenticate (username: jleleu, password: jleleu)
 - be redirected back to the CAS services management webapp, being successfully authenticated.
+
+## Manual deployment
+
+You can also deploy manually these two web applications in your favorite web applications server:
+
+- cas-overlay-server-demo on http://localhost:8080/cas
+- cas-overlay-management-demo on http://localhost:8080/cas-management or whatever the context you want as it doesn't matter in this case.
