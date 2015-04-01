@@ -16,7 +16,7 @@ To start quickly, build the project:
 and start the two web applications with jetty:
 
     cd cas-overlay-server-demo
-    mvn jetty:run</code>
+    mvn jetty:run
 
 To test,
 
