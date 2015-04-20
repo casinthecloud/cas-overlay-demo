@@ -5,3 +5,6 @@ target/
 test-output/
 bin/
 *.log
+.idea
+*.iml
+overlays/
