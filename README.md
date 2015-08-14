@@ -29,4 +29,4 @@ To test,
 You can also deploy manually these two web applications in your favorite web applications server:
 
 - cas-overlay-server-demo on http://localhost:8080/cas
-- cas-overlay-management-demo on http://localhost:8080/cas-management or whatever the context you want as it doesn't matter in this case.
+- cas-overlay-management-demo on http://localhost:8080/cas-management.
