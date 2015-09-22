@@ -94,6 +94,6 @@
 		<module>cas-overlay-management-demo</module>
 	</modules>
 	<properties>
-		<cas.version>4.1.0-RC2</cas.version>
+		<cas.version>4.1.0</cas.version>
 	</properties>
 </project>
