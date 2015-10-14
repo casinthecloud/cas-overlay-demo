@@ -8,3 +8,4 @@ bin/
 .idea
 *.iml
 overlays/
+*.log.gz
