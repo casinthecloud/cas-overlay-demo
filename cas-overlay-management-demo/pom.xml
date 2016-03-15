@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.leleuj</groupId>
         <artifactId>cas-overlay-demo</artifactId>
-        <version>4.2.0-SNAPSHOT</version>
+        <version>4.3.0-SNAPSHOT</version>
     </parent>
     <artifactId>cas-overlay-management-demo</artifactId>
     <packaging>war</packaging>
