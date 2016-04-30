@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0" metadata-complete="true">
-    <display-name>Central Authentication System (CAS) 4.2.0-SNAPSHOT</display-name>
+    <display-name>Central Authentication System (CAS)</display-name>
 
     <absolute-ordering />
 
@@ -11,14 +11,21 @@
         <param-name>isLog4jAutoInitializationDisabled</param-name>
         <param-value>true</param-value>
     </context-param>
+    <listener>
+        <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
+    </listener>
 
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>org.springframework.web.context.support.GroovyWebApplicationContext</param-value>
+    </context-param>
+    
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
             /WEB-INF/spring-configuration/*.xml
+            /WEB-INF/spring-configuration/*.groovy
             /WEB-INF/deployerConfigContext.xml
-            <!-- this enables extensions and addons to contribute to overall CAS' application context
-                 by loading spring context files from classpath i.e. found in classpath jars, etc. -->
             classpath*:/META-INF/spring/*.xml
         </param-value>
     </context-param>
@@ -26,6 +33,7 @@
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <async-supported>true</async-supported>
     </filter>
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>
@@ -35,6 +43,7 @@
     <filter>
         <filter-name>CAS Client Info Logging Filter</filter-name>
         <filter-class>org.jasig.inspektr.common.web.ClientInfoThreadLocalFilter</filter-class>
+        <async-supported>true</async-supported>
     </filter>
     <filter-mapping>
         <filter-name>CAS Client Info Logging Filter</filter-name>
@@ -44,6 +53,7 @@
     <filter>
         <filter-name>requestParameterSecurityFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <async-supported>true</async-supported>
     </filter>
     <filter-mapping>
         <filter-name>requestParameterSecurityFilter</filter-name>
@@ -53,6 +63,7 @@
     <filter>
         <filter-name>responseHeadersSecurityFilter</filter-name>
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <async-supported>true</async-supported>
     </filter>
     <filter-mapping>
         <filter-name>responseHeadersSecurityFilter</filter-name>
@@ -96,26 +107,31 @@
             <param-value>false</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
+        <async-supported>true</async-supported>
     </servlet>
 
     <servlet>
         <servlet-name>metrics-health</servlet-name>
         <servlet-class>com.codahale.metrics.servlets.HealthCheckServlet</servlet-class>
+        <async-supported>true</async-supported>
     </servlet>
 
     <servlet>
         <servlet-name>metrics</servlet-name>
         <servlet-class>com.codahale.metrics.servlets.MetricsServlet</servlet-class>
+        <async-supported>true</async-supported>
     </servlet>
 
     <servlet>
         <servlet-name>metrics-ping</servlet-name>
         <servlet-class>com.codahale.metrics.servlets.PingServlet</servlet-class>
+        <async-supported>true</async-supported>
     </servlet>
 
     <servlet>
         <servlet-name>metrics-threads</servlet-name>
         <servlet-class>com.codahale.metrics.servlets.ThreadDumpServlet</servlet-class>
+        <async-supported>true</async-supported>
     </servlet>
 
     <servlet-mapping>
@@ -226,6 +242,7 @@
     <session-config>
         <!-- Default to 5 minute session timeouts -->
         <session-timeout>5</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
     </session-config>
 
     <error-page>
