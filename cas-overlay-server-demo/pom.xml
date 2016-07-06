@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>org.jasig.cas</groupId>
-            <artifactId>cas-server-integration-restlet</artifactId>
+            <artifactId>cas-server-support-rest</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
