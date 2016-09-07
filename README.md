@@ -1,32 +1,34 @@
 ## What is this project?
 
-This project *cas-overlay-demo* has been created to test the CAS server and the CAS services management webapps (version >= *4.0*) using the *Maven overlay* mechanism: [http://jasig.github.io/cas/4.0.x/installation/Maven-Overlay-Installation.html](http://jasig.github.io/cas/4.0.x/installation/Maven-Overlay-Installation.html).  
+This project *cas-overlay-demo* has been created to test the CAS server and the CAS management webapps (version >= *4.0*) using the [*Maven overlay* mechanism](http://apereo.github.io/cas/4.2.x/installation/Maven-Overlay-Installation.html):  
 It's composed of two overlays:
 
 - the *cas-overlay-server-demo* module is the CAS server webapp
-- the *cas-overlay-management-demo* module is the CAS services management webapp.
+- the *cas-overlay-management-demo* module is the CAS management webapp.
 
-## Deploy
+## Build & test
 
 To start quickly, build the project:
 
     cd cas-overlay-demo
     mvn clean install
 
-and start the two web applications with jetty:
+and launch the two web applications:
 
-    cd cas-overlay-server-demo
-    mvn jetty:run
+```shell
+cd cas-overlay-server-demo
+java -jar target/cas.war
+```
 
-To test,
+and
 
-- call the [http://localhost:8080/cas-management](http://localhost:8080/cas-management) url to access the CAS services management webapp
-- be redirected to CAS server and authenticate (username: jleleu, password: jleleu)
-- be redirected back to the CAS services management webapp, being successfully authenticated.
+```shell
+cd cas-overlay-management-demo
+java -jar target/cas-management.war
+```
 
-## Manual deployment
+To test:
 
-You can also deploy manually these two web applications in your favorite web applications server:
-
-- cas-overlay-server-demo on http://localhost:8080/cas
-- cas-overlay-management-demo on http://localhost:8080/cas-management.
+- call the [http://localhost:8081/cas-management](http://localhost:8081/cas-management) url to access the CAS services management webapp
+- you will be redirected to the CAS server for login (username: jleleu, password: jleleu)
+- then, you'll be redirected back to the CAS services management webapp, successfully authenticated.
