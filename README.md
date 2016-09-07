@@ -10,21 +10,21 @@ It's composed of two overlays:
 
 To start quickly, build the project:
 
-    cd cas-overlay-demo
-    mvn clean install
+```shell
+cd cas-overlay-demo
+mvn clean install
+```
 
 and launch the two web applications:
 
 ```shell
-cd cas-overlay-server-demo
-java -jar target/cas.war
+java -jar cas-overlay-server-demo/target/cas.war
 ```
 
 and
 
 ```shell
-cd cas-overlay-management-demo
-java -jar target/cas-management.war
+java -jar cas-overlay-management-demo/target/cas-management.war
 ```
 
 To test:
