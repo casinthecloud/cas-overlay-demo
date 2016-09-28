@@ -105,6 +105,6 @@
 		<module>cas-overlay-management-demo</module>
 	</modules>
 	<properties>
-		<cas.version>4.2.3</cas.version>
+		<cas.version>4.2.5</cas.version>
 	</properties>
 </project>

@@ -11,7 +11,7 @@
     <description>CAS Overlay server demo</description>
 
     <properties>
-        <log4j.version>2.4.1</log4j.version>
+        <log4j.version>2.6.2</log4j.version>
     </properties>
 
     <dependencies>
