@@ -15,4 +15,4 @@ cd cas-overlay-demo
 mvn clean install
 ```
 
-and launch the CAS server via your favorite web application server with `-Dcas.standalone.config=cas-overlay-server-demo/config`.
+and launch the CAS webapps via your favorite web application server with `-Dcas.standalone.config=cas-overlay-server-demo/config`.
