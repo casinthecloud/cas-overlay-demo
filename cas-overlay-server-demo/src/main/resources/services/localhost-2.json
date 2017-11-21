@@ -3,5 +3,9 @@
   "serviceId" : "^https?://localhost.*",
   "name" : "localhost",
   "id" : 2,
-  "description" : "Allows only localhost services"
+  "description" : "Allows only localhost services",
+  "multifactorPolicy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceMultifactorPolicy",
+    "multifactorAuthenticationProviders" : [ "java.util.LinkedHashSet", [ "mfa-duo" ] ]
+  }
 }

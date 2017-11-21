@@ -20,6 +20,16 @@
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-json-service-registry</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oauth-webflow</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-duo</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -39,6 +49,9 @@
                         <overlay>
                             <groupId>org.apereo.cas</groupId>
                             <artifactId>cas-server-webapp${app.server}</artifactId>
+                            <excludes>
+                                <exclude>WEB-INF/classes/services/*.json</exclude>
+                            </excludes>
                         </overlay>
                     </overlays>
                 </configuration>

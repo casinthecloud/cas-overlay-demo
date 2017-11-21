@@ -1,0 +1,8 @@
+{
+  "@class" : "org.apereo.cas.support.oauth.services.OAuthRegisteredService",
+  "clientId": "http://clientid",
+  "clientSecret": "secret",
+  "name" : "oauthClient",
+  "supportedGrantTypes" : [ "java.util.HashSet", [ "client_credentials" ] ],
+  "id" : 3
+}
