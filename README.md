@@ -1,6 +1,6 @@
 ## What is this project?
 
-This *cas-overlay-demo* project has been created to test the CAS server:
+This *cas-overlay-demo* project has been created to test the CAS server.
 
 ## Build & test
 
