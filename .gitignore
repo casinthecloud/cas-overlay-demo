@@ -8,4 +8,5 @@ bin/
 .idea
 *.iml
 overlays/
-*.log.gz
+.DS_Store
+node_modules/

@@ -1,8 +1,0 @@
-{
-  "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : "^https?://front.*",
-  "name" : "front",
-  "id" : 0,
-  "description" : "Allows only front services",
-  "logoutType" : "FRONT_CHANNEL"
-}
