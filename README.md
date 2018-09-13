@@ -1,6 +1,6 @@
 ## What is this project?
 
-This project *cas-overlay-demo* has been created to test the CAS server using the [*Maven overlay* mechanism](http://apereo.github.io/cas/5.2.x/installation/Maven-Overlay-Installation.html):  
+This *cas-overlay-demo* project has been created to test the CAS server:
 
 ## Build & test
 
