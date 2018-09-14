@@ -17,3 +17,6 @@ endpoints.enabled: true
 
 cas.authn.oauth.code.timeToKillInSeconds: 30000
 cas.authn.oauth.code.numberOfUses: 10000
+
+cas.ticket.st.numberOfUses: 1000
+cas.ticket.st.timeToKillInSeconds: 10000
