@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
     <artifactId>cas-overlay-demo</artifactId>
-    <version>5.2.7-SNAPSHOT</version>
+    <version>5.2.9-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <repositories>
