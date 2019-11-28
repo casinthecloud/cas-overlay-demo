@@ -73,7 +73,7 @@
     </build>
 
     <properties>
-        <cas.version>5.2.7</cas.version>
+        <cas.version>5.2.9</cas.version>
         <java.version>1.8</java.version>
     </properties>
 
