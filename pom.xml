@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
     <artifactId>cas-overlay-demo</artifactId>
-    <version>6.1.5-SNAPSHOT</version>
+    <version>6.1.7-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <repositories>
@@ -39,7 +39,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.1</version>
                 <configuration>
                     <warName>cas</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -62,7 +62,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <release>${java.version}</release>
                 </configuration>
@@ -72,7 +72,7 @@
     </build>
 
     <properties>
-        <cas.version>6.1.5</cas.version>
+        <cas.version>6.1.7.1</cas.version>
         <java.version>11</java.version>
     </properties>
 
