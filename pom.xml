@@ -156,7 +156,7 @@
 
     <properties>
         <cas.version>6.3.7.4</cas.version>
-        <spring.version>5.2.20.RELEASE</spring.version>
+        <spring.version>5.2.21.RELEASE</spring.version>
         <java.version>11</java.version>
     </properties>
 
