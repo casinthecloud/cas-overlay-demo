@@ -1,6 +1,7 @@
 cas.authn.accept.users: jleleu::jleleu,leleuj::leleuj
 
 cas.tgc.secure: false
+cas.tgc.same-site-policy: Lax
 
 cas.tgc.crypto.enabled: false
 cas.webflow.crypto.enabled: false
@@ -16,3 +17,5 @@ cas.ticket.st.numberOfUses: 1000
 cas.ticket.st.timeToKillInSeconds: 10000
 
 cas.serviceRegistry.json.location: classpath:/services
+cas:
+
