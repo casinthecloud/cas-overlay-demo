@@ -17,5 +17,3 @@ cas.ticket.st.numberOfUses: 1000
 cas.ticket.st.timeToKillInSeconds: 10000
 
 cas.serviceRegistry.json.location: classpath:/services
-cas:
-
