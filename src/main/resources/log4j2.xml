@@ -80,6 +80,9 @@
             <AppenderRef ref="casConsole"/>
         </AsyncLogger>
 
+        <AsyncLogger name="com.casinthecloud.cas" level="warn" additivity="false">
+            <AppenderRef ref="casConsole"/>
+        </AsyncLogger>
 
         <AsyncLogger name="org.opensaml" level="warn" additivity="false">
             <AppenderRef ref="casConsole"/>
