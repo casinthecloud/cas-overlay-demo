@@ -80,7 +80,7 @@
             <AppenderRef ref="casConsole"/>
         </AsyncLogger>
 
-        <AsyncLogger name="com.casinthecloud.cas" level="warn" additivity="false">
+        <AsyncLogger name="com.casinthecloud.cas" level="debug" additivity="false">
             <AppenderRef ref="casConsole"/>
         </AsyncLogger>
 
