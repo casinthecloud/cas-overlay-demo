@@ -80,13 +80,7 @@
             <AppenderRef ref="casConsole"/>
         </AsyncLogger>
 
-        <AsyncLogger name="org.pac4j" level="debug" additivity="false">
-            <AppenderRef ref="casConsole"/>
-        </AsyncLogger>
-        <AsyncLogger name="org.apereo.cas.support.oauth" level="debug" additivity="false">
-            <AppenderRef ref="casConsole"/>
-        </AsyncLogger>
-        <AsyncLogger name="org.apereo.cas.support.oidc" level="debug" additivity="false">
+        <AsyncLogger name="com.casinthecloud.cas" level="debug" additivity="false">
             <AppenderRef ref="casConsole"/>
         </AsyncLogger>
 
