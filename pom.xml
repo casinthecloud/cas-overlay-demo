@@ -75,7 +75,7 @@
     </build>
 
     <properties>
-        <cas.version>6.6.14</cas.version>
+        <cas.version>6.6.15</cas.version>
         <java.version>11</java.version>
     </properties>
 
