@@ -80,6 +80,7 @@ or override log42.component.properties to turn off async
         <Logger name="org.pac4j" level="${sys:pac4j.log.level}"/>
 
         <Logger name="com.casinthecloud.cas" level="debug"/>
+        <Logger name="org.apereo.cas.util.function.FunctionUtils" level="error"/>
 
         <Logger name="org.opensaml" level="${sys:opensaml.log.level}"/>
 
