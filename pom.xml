@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
+            <version>1.18.32</version>
         </dependency>
     </dependencies>
 
@@ -75,7 +75,7 @@
     </build>
 
     <properties>
-        <cas.version>6.6.15</cas.version>
+        <cas.version>6.6.15.1</cas.version>
         <java.version>11</java.version>
     </properties>
 
