@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.34</version>
+            <version>1.18.42</version>
         </dependency>
     </dependencies>
 
@@ -95,7 +95,7 @@
     </build>
 
     <properties>
-        <cas.version>7.1.6.1</cas.version>
+        <cas.version>7.1.6.2</cas.version>
         <java.version>21</java.version>
         <!--tomcat.properties>-tomcat</tomcat.properties-->
         <tomcat.properties></tomcat.properties>
