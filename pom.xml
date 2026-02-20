@@ -72,7 +72,7 @@
             <!--plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>4.0.1</version>
+                <version>4.1.0-M2</version>
                 <configuration>
                     <mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
                     <excludes>
@@ -95,7 +95,7 @@
     </build>
 
     <properties>
-        <cas.version>8.0.0-RC1</cas.version>
+        <cas.version>8.0.0-RC2</cas.version>
         <java.version>25</java.version>
         <!--tomcat.properties>-tomcat</tomcat.properties-->
         <tomcat.properties></tomcat.properties>
