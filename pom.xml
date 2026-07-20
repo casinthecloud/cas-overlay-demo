@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casinthecloud</groupId>
     <artifactId>cas-overlay-demo</artifactId>
-    <version>7.3.7-SNAPSHOT</version>
+    <version>7.3.8-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <dependencies>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.42</version>
+            <version>1.18.46</version>
         </dependency>
     </dependencies>
 
@@ -58,7 +58,7 @@
             <!--plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.4.1</version>
+                <version>3.5.6</version>
                 <configuration>
                     <mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
                     <excludes>
@@ -81,7 +81,7 @@
     </build>
 
     <properties>
-        <cas.version>7.3.7.3</cas.version>
+        <cas.version>7.3.8</cas.version>
         <java.version>21</java.version>
         <!--tomcat.properties>-tomcat</tomcat.properties-->
         <tomcat.properties></tomcat.properties>
