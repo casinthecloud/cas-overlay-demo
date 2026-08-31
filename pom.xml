@@ -95,7 +95,7 @@
     </build>
 
     <properties>
-        <cas.version>8.1.0-SNAPSHOT</cas.version>
+        <cas.version>8.1.0-RC1</cas.version>
         <java.version>25</java.version>
         <!--tomcat.properties>-tomcat</tomcat.properties-->
         <tomcat.properties></tomcat.properties>
